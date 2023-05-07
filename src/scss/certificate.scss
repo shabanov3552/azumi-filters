@@ -1,0 +1,155 @@
+.certificate {
+   margin-bottom: rem(120);
+
+   @media (max-width:$laptopLarge) {
+      margin-bottom: rem(100);
+   }
+
+   @media (max-width:$mobileMiddle) {
+      margin-bottom: rem(50);
+   }
+
+   // .certificate__container
+
+   &__container {}
+
+   // .certificate__row
+
+   &__row {
+      display: flex;
+      gap: 110px;
+
+      @media (max-width:$laptop) {
+         display: block;
+      }
+   }
+
+   // .certificate__sidebar
+
+   &__sidebar {
+      flex: 0 0 330px;
+
+      @media (max-width:$laptopLarge) {
+         flex: 0 0 250px;
+      }
+
+      @media (max-width:$laptop) {
+         margin-bottom: rem(60);
+         flex: 1 1 auto;
+      }
+
+      @media (max-width:$tablet) {
+         margin-bottom: rem(40);
+      }
+
+      @media (max-width:$mobile) {
+         margin-bottom: rem(25);
+      }
+   }
+
+   // .certificate__main
+
+   &__main {
+      flex: 1 1 auto;
+   }
+
+   // .certificate__title
+
+   &__title {}
+
+   // .certificate__subtitle
+
+   &__subtitle {
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: rem(40);
+
+      @media (max-width:$laptopLarge) {
+         font-size: 30px;
+         line-height: 40px;
+      }
+
+      @media (max-width:$tablet) {
+         font-size: 25px;
+         line-height: 35px;
+      }
+
+      @media (max-width:$mobile) {
+         font-size: 20px;
+         line-height: 30px;
+      }
+
+      @media (max-width:$mobileMiddle) {
+         font-size: 17px;
+         line-height: 25px;
+      }
+   }
+
+   // .certificate__grid
+
+   &__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-auto-rows: 380px;
+      gap: 30px;
+
+      @media (max-width:$laptopLarge) {
+         grid-auto-rows: 300px;
+      }
+
+      @media (max-width:$tablet) {
+         grid-auto-rows: 250px;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+
+      @media (max-width:$mobile) {
+         gap: 15px;
+      }
+
+      @media (max-width:$mobileMiddle) {
+         grid-auto-rows: 200px;
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+   }
+
+   // .certificate__item
+
+   &__item {
+      background-color: #fff;
+      border-radius: 40px;
+      padding: rem(60) rem(40);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (max-width:$tablet) {
+         padding: rem(30);
+      }
+
+      @media (max-width:$mobile) {
+         padding: rem(20);
+      }
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+   }
+}
+
+.sidebar {
+
+   // .sidebar__list
+
+   &__list {}
+
+   // .sidebar__item
+
+   &__item {}
+
+   // .sidebar__link
+
+   &__link {}
+}

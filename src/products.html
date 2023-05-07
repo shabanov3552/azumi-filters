@@ -1,0 +1,66 @@
+@@include('html/_header.htm',{
+"title":"Products page",
+"modifierClass":""
+})
+<!-- header_white -->
+<main class="page header-margin products top-page-bg">
+
+   <div class="products__container">
+      <h1 class="products__title page-title">PRODUCTS</h1>
+      <div class="products__grid">
+         <div class="products__first-block">
+            <div class="products__lines">
+               @@include('html/_product-line.htm',{})
+            </div>
+            <div class="products__subtitle">
+               <div class="products__subtitle-count">40+</div>
+               <div class="products__subtitle-text">Countries</div>
+               <div class="products__subtitle-small-text">DISTRIBUTED IN</div>
+            </div>
+         </div>
+         <div class="products__card products__card_cabin">
+            <div class="products__card-ibg"><img src="img/products/cabin.png" alt=""></div>
+            <div class="products__card-content">
+               <div class="products__name">Cabin <br> filters</div>
+               <div class="products__descr">Is the air in your city clean? AZUMI is on guard of your health!</div>
+               <a href="cabin.html" class="products__link">View more</a>
+            </div>
+         </div>
+         <div class="products__card products__card_air">
+            <div class="products__card-ibg"><img src="img/products/air.png" alt=""></div>
+            <div class="products__card-content">
+               <div class="products__name">Air <br> filters</div>
+               <div class="products__descr">Azumi uses the world's leading technologies for filtering air</div>
+               <a href="air.html" class="products__link">View more</a>
+            </div>
+         </div>
+         <div class="products__card products__card_transmition">
+            <div class="products__card-ibg"><img src="img/products/transm.png" alt=""></div>
+            <div class="products__card-content">
+               <div class="products__name">TRANSMISSION <br> filters</div>
+               <div class="products__descr">We have developed filters to keep your car's transmission in optimal condition during operation, preventing damage by abrasive elements.</div>
+               <a href="transmission.html" class="products__link">View more</a>
+            </div>
+         </div>
+         <div class="products__card products__card_oil">
+            <div class="products__card-ibg"><img src="img/products/oil.png" alt=""></div>
+            <div class="products__card-content">
+               <div class="products__name">Oil <br> filters</div>
+               <div class="products__descr">The purity of the oil entering the engine, determines its service life.</div>
+               <a href="oil.html" class="products__link">View more</a>
+            </div>
+         </div>
+         <div class="products__card products__card_fuel">
+            <div class="products__card-ibg"><img src="img/products/fuel.png" alt=""></div>
+            <div class="products__card-content">
+               <div class="products__name">Fuel <br> filters</div>
+               <div class="products__descr">Protect your car engine from dirt, rust and other particles that get into it along with fuel by choosing AZUMI filters.</div>
+               <a href="fuel.html" class="products__link">View more</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</main>
+
+@@include('html/_footer.htm',{})
