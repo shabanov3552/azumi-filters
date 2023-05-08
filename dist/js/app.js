@@ -802,7 +802,7 @@
             };
             this._this = this;
             if (this.config.init) {
-                const selectItems = data ? document.querySelectorAll(data) : document.querySelectorAll("select");
+                const selectItems = data ? document.querySelectorAll(data) : document.querySelectorAll("[data-custom-select]");
                 if (selectItems.length) {
                     this.selectsInit(selectItems);
                     this.setLogging(`Проснулся, построил селектов: (${selectItems.length})`);

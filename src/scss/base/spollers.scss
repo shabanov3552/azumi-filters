@@ -37,6 +37,10 @@
 	position: relative;
 	z-index: 2;
 
+	&:hover {
+		background: #2AB9EF;
+	}
+
 	@media (max-width:$mobile) {
 		font-size: 18px;
 		line-height: 18px;
@@ -83,6 +87,10 @@
 
 		&._spoller-active {
 			background: #E52330;
+
+			&:hover {
+				background: #2AB9EF;
+			}
 
 			&::before {
 				transform: translateY(-50%) rotate(-180deg);
