@@ -186,6 +186,8 @@ body {
 // Подключение стилей отдельных блоков
 @import "header";
 @import "footer";
+@import "libs/bootstrap.scss";
+@import "libs/bootstrap-select.scss";
 
 // Подключение стилей отдельных страниц
 @import "home";

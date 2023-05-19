@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230508205930">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230519135507">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,8 +75,8 @@
 				<h1 class="catalog__title page-title">CATALOGUE SEARCH</h1>
 				<div data-tabs data-tabs-animate="300" class="catalog__tabs">
 					<nav data-tabs-titles class="catalog__tab-navigation">
-						<button type="button" class="catalog__tab-title _tab-active">Product</button>
-						<button type="button" class="catalog__tab-title">Application</button>
+						<button type="button" class="catalog__tab-title">Product</button>
+						<button type="button" class="catalog__tab-title _tab-active">Application</button>
 						<button type="button" class="catalog__tab-title">By size</button>
 					</nav>
 					<div data-tabs-body class="catalog__tab-content">
@@ -94,60 +94,129 @@
 						</div>
 						<div class="catalog__tab-body">
 							<form action="" class="form application-search-form">
-								<div class="form__grid" data-one-select>
+								<div class="form__grid">
 									<div class="form__line">
-										<select name="form[]" class="form__select">
-											<option value="">Select brand</option>
-											<option value="1">BMW</option>
-											<option value="2">Honda</option>
-											<option value="3">Mazda</option>
-											<option value="4">Lexus</option>
-											<option value="5">Jeep</option>
+										<select class="form__select" required="required" data-live-search="true" data-size="10" title="Select Brand">
+											<option value="1">ACURA</option>
+											<option value="2">ALFA ROMEO</option>
+											<option value="227">ARO</option>
+											<option value="3">ASIA MOTORS</option>
+											<option value="4">ASTON MARTIN</option>
+											<option value="5">AUDI</option>
+											<option value="447">BAW</option>
+											<option value="6">BENTLEY</option>
+											<option value="7">BMW</option>
+											<option value="8">BMW (Alpina)</option>
 										</select>
 									</div>
 									<div class="form__line">
-										<select disabled name="form[]" class="form__select">
-											<option value="">Select class & model</option>
-											<option value="1">Rav4</option>
-											<option value="2">5-series</option>
-											<option value="3">RX300</option>
-											<option value="4">MPV</option>
+										<select class="form__select" data-live-search="true" multiple data-size="10" title="Select Class &amp; Model" data-done-button="true" data-done-button-text="Search" data-max-options="20" data-group-select-options="true">
+											<option value="118" data-value1="" data-value2="Arnage" data-maintext=""> Arnage</option>
+											<option value="119" data-value1="" data-value2="Azure" data-maintext=""> Azure</option>
+											<option value="21385" data-value1="" data-value2="Bentayga" data-maintext=""> Bentayga</option>
+											<option value="120" data-value1="" data-value2="Brooklands" data-maintext=""> Brooklands</option>
+											<option value="20939" data-value1="" data-value2="Continental Flying Spur" data-maintext=""> Continental Flying Spur</option>
+											<option value="121" data-value1="" data-value2="Continental GT" data-maintext=""> Continental GT</option>
+											<option value="20940" data-value1="" data-value2="Continental GTC" data-maintext=""> Continental GTC</option>
+											<option value="22190" data-value1="" data-value2="Flying Spur" data-maintext=""> Flying Spur</option>
+											<option value="122" data-value1="" data-value2="Mulsanne" data-maintext=""> Mulsanne</option>
+											<option value="123" data-value1="" data-value2="Turbo RS" data-maintext=""> Turbo RS</option>
 										</select>
 									</div>
 									<div class="form__line">
-										<select disabled name="form[]" class="form__select">
-											<option value="">Select IMG & body</option>
-											<option value="1">Rav4</option>
-											<option value="2">5-series</option>
-											<option value="3">RX300</option>
-											<option value="4">MPV</option>
+										<select class="form__select" data-max-options="50" data-live-search="true" multiple="" data-size="10" data-actions-box="true" title="Select IMG &amp; Body" data-selected-text-format="count>4" data-done-button="true" data-done-button-text="Search" data-group-select-options="true">
+											<option value="393 - 39323B" data-maintext="393" data-value1="393" data-value2="39323B">39323B</option>
+											<option value="394 - 39423B" data-maintext="394" data-value1="394" data-value2="39423B">39423B</option>
+											<option value="3W2 - 3W245A" data-maintext="3W2" data-value1="3W2" data-value2="3W245A">3W245A</option>
+											<option value="3W2 - 3W246A" data-maintext="3W2" data-value1="3W2" data-value2="3W246A">3W246A</option>
+											<option value="3W4 - 3W445A" data-maintext="3W4" data-value1="3W4" data-value2="3W445A">3W445A</option>
+											<option value="3Y_ - 3Y212A" data-maintext="3Y_" data-value1="3Y_" data-value2="3Y212A">3Y212A</option>
+											<option value="3Y_ - 3Y213A" data-maintext="3Y_" data-value1="3Y_" data-value2="3Y213A">3Y213A</option>
+											<option value="4V1 - 4V14A9" data-maintext="4V1" data-value1="4V1" data-value2="4V14A9">4V14A9</option>
+											<option value="4V1 - 4V14B9" data-maintext="4V1" data-value1="4V1" data-value2="4V14B9">4V14B9</option>
+											<option value="4V1 - 4V14D9" data-maintext="4V1" data-value1="4V1" data-value2="4V14D9">4V14D9</option>
+											<option value="4W214B" data-maintext="4W214B" data-value1="4W214B" data-value2="4W214B">4W214B</option>
+											<option value="R" data-maintext="R" data-value1="R" data-value2="R">R</option>
+											<option value="S" data-maintext="S" data-value1="S" data-value2="S">S</option>
+											<option value="SC" data-maintext="SC" data-value1="SC" data-value2="SC">SC</option>
 										</select>
 									</div>
 									<div class="form__line">
-										<select disabled name="form[]" class="form__select">
-											<option value="">Select Year</option>
-											<option value="1">Rav4</option>
-											<option value="2">5-series</option>
-											<option value="3">RX300</option>
-											<option value="4">MPV</option>
+										<select class="form__select" data-live-search="true" multiple="" data-size="10" data-actions-box="true" title="Select Year" data-done-button="true" data-done-button-text="Search">
+											<option value="2023">2023</option>
+											<option value="2022">2022</option>
+											<option value="2021">2021</option>
+											<option value="2020">2020</option>
+											<option value="2019">2019</option>
+											<option value="2018">2018</option>
+											<option value="2017">2017</option>
+											<option value="2016">2016</option>
+											<option value="2015">2015</option>
+											<option value="2014">2014</option>
+											<option value="2013">2013</option>
+											<option value="2012">2012</option>
+											<option value="2011">2011</option>
+											<option value="2010">2010</option>
+											<option value="2009">2009</option>
+											<option value="2008">2008</option>
+											<option value="2007">2007</option>
+											<option value="2006">2006</option>
+											<option value="2005">2005</option>
+											<option value="2004">2004</option>
+											<option value="2003">2003</option>
+											<option value="2002">2002</option>
+											<option value="2001">2001</option>
+											<option value="2000">2000</option>
+											<option value="1999">1999</option>
+											<option value="1998">1998</option>
+											<option value="1997">1997</option>
+											<option value="1996">1996</option>
+											<option value="1995">1995</option>
+											<option value="1994">1994</option>
+											<option value="1993">1993</option>
+											<option value="1992">1992</option>
+											<option value="1991">1991</option>
+											<option value="1990">1990</option>
+											<option value="1989">1989</option>
+											<option value="1988">1988</option>
+											<option value="1987">1987</option>
+											<option value="1986">1986</option>
+											<option value="1985">1985</option>
+											<option value="1984">1984</option>
+											<option value="1983">1983</option>
+											<option value="1982">1982</option>
+											<option value="1981">1981</option>
 										</select>
 									</div>
 									<div class="form__line">
-										<select disabled name="form[]" class="form__select">
-											<option value="">Select engines No</option>
-											<option value="1">Rav4</option>
-											<option value="2">5-series</option>
-											<option value="3">RX300</option>
-											<option value="4">MPV</option>
+										<select class="form__select" data-live-search="true" multiple="" data-size="10" data-actions-box="true" title="Select Engines No" data-done-button="true" data-done-button-text="Search">
+											<option value="--">--</option>
+											<option value="BEB">BEB</option>
+											<option value="BMW V8">BMW V8</option>
+											<option value="BWR">BWR</option>
+											<option value="BWRA">BWRA</option>
+											<option value="CKBB">CKBB</option>
+											<option value="CKHD">CKHD</option>
+											<option value="CMMC">CMMC</option>
+											<option value="CVAA">CVAA</option>
+											<option value="CZAA">CZAA</option>
+											<option value="CZMA">CZMA</option>
+											<option value="DCUA">DCUA</option>
+											<option value="DDBB">DDBB</option>
+											<option value="L410">L410</option>
+											<option value="L410I">L410I</option>
+											<option value="L410IT">L410IT</option>
+											<option value="L410MT">L410MT</option>
+											<option value="L410MT1T">L410MT1T</option>
+											<option value="L410MTIT">L410MTIT</option>
 										</select>
 									</div>
 									<div class="form__line">
-										<select disabled name="form[]" class="form__select">
-											<option value="">Select engines volumes</option>
-											<option value="1">Rav4</option>
-											<option value="2">5-series</option>
-											<option value="3">RX300</option>
-											<option value="4">MPV</option>
+										<select disabled class="form__select" data-live-search="true" multiple="" data-size="10" data-actions-box="true" title="Select Engines Volumes" data-done-button="true" data-done-button-text="Search">
+											<option value="4000">4000</option>
+											<option value="4400">4400</option>
+											<option value="6000">6000</option>
+											<option value="6800">6800</option>
 										</select>
 									</div>
 								</div>
@@ -157,7 +226,7 @@
 						<div class="catalog__tab-body">
 							<form action="" class="form size-search-form">
 								<div class="form__line">
-									<select data-custom-select name="form[]" class="form__select" data-class-modif="type">
+									<select class="form__select select-type">
 										<option value="">Select Type</option>
 										<option value="1">Type 1</option>
 										<option value="2">Type 2</option>
@@ -178,7 +247,7 @@
 											</label>
 										</div>
 										<div class="form__line">
-											<select data-custom-select name="form[]" class="form__select">
+											<select name="form[]" class="form__select">
 												<option value="0">0</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
@@ -196,7 +265,7 @@
 											</label>
 										</div>
 										<div class="form__line">
-											<select data-custom-select name="form[]" class="form__select">
+											<select name="form[]" class="form__select">
 												<option value="0">0</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
@@ -214,7 +283,7 @@
 											</label>
 										</div>
 										<div class="form__line">
-											<select data-custom-select name="form[]" class="form__select">
+											<select name="form[]" class="form__select">
 												<option value="0">0</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
@@ -232,7 +301,7 @@
 											</label>
 										</div>
 										<div class="form__line">
-											<select data-custom-select name="form[]" class="form__select">
+											<select name="form[]" class="form__select">
 												<option value="0">0</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
@@ -250,7 +319,7 @@
 											</label>
 										</div>
 										<div class="form__line">
-											<select data-custom-select name="form[]" class="form__select">
+											<select name="form[]" class="form__select">
 												<option value="0">0</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
@@ -268,7 +337,7 @@
 											</label>
 										</div>
 										<div class="form__line">
-											<select data-custom-select name="form[]" class="form__select">
+											<select name="form[]" class="form__select">
 												<option value="0">0</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
@@ -429,13 +498,15 @@
 						<div class="search-res-application__header">
 							<div class="search-res-application__title">Application Search</div>
 							<div class="search-res-application__select">
-								<select name="form[]" class="form__select">
-									<!-- <option value="">Select brand</option> -->
-									<option value="1">(A) AIR FILTER</option>
-									<option value="2">(AC) CABIN FILTER</option>
-									<option value="3">(C) OIL FILTER (SPIN-ON)</option>
-									<option value="4">(FSP) PETROL FILTER (INJECTOR &amp; CARBURETOR)</option>
-									<option value="5">(JT) TRANSMISSION FILTER</option>
+								<select class="form__select" title="Select type" multiple="" data-live-search="true" data-actions-box="true">
+									<option value="1" selected="selected">(A) AIR FILTER</option>
+									<option value="2" selected="selected">(C) OIL FILTER (SPIN-ON)</option>
+									<option value="3" selected="selected">(OE) OIL FILTER (ELEMENT)</option>
+									<option value="4" selected="selected">(AC) CABIN FILTER</option>
+									<option value="5" selected="selected">(FE) FUEL FILTER (ELEMENT)</option>
+									<option value="6" selected="selected">(FS) FUEL FILTER (IN-TANK)</option>
+									<option value="7" selected="selected">(JT) TRANSMISSION FILTER</option>
+									<option value="8" selected="selected">(FSP) PETROL FILTER (INJECTOR &amp; CARBURETOR)</option>
 								</select>
 							</div>
 						</div>
@@ -611,7 +682,6 @@
 				</div>
 			</div>
 		</main>
-
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__grid">
@@ -760,8 +830,11 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230508205930" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20230508205930"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230519135507" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js?_v=20230519135507" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js?_v=20230519135507" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js?_v=20230519135507" integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+	<script src="js/app.min.js?_v=20230519135507"></script>
 </body>
 
 </html>
