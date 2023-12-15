@@ -134,3 +134,4 @@ class DynamicAdapt {
 }
 const da = new DynamicAdapt("max");
 da.init();
+console.log(da);

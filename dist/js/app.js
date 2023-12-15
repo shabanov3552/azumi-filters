@@ -861,6 +861,7 @@
     }
     const da = new DynamicAdapt("max");
     da.init();
+    console.log(da);
     (function($) {
         "use strict";
         if (!String.prototype.includes) (function() {

@@ -170,6 +170,7 @@
 	&__list {
 		display: flex;
 		gap: 30px;
+		flex-wrap: wrap;
 	}
 
 	// .languages__item
@@ -254,7 +255,7 @@
 
 .mobile-menu {
 	background: #E52330;
-	padding: rem(20) rem(18);
+	padding: rem(80) rem(18) rem(20) rem(18);
 	position: fixed;
 	top: 0;
 	left: -100%;
@@ -276,7 +277,8 @@
 	&__header {
 		display: flex;
 		justify-content: flex-end;
-		margin-bottom: rem(40);
+		margin-bottom: rem(10);
+		padding: 0 rem(15);
 	}
 
 
@@ -284,7 +286,7 @@
 
 	&__list {
 		color: #fff;
-		height: calc(100% - 140px);
+		height: calc(100% - 110px);
 		overflow: auto;
 	}
 
