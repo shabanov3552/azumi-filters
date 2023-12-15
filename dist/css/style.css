@@ -3437,6 +3437,14 @@ select.selectpicker {
   font-size: 80px;
   line-height: 80px;
   margin-bottom: 1.625rem;
+  display: block;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.index-page .news__title:hover {
+  color: #E52330;
 }
 
 .index-page .news__item {

@@ -483,6 +483,12 @@
       font-size: 80px;
       line-height: 80px;
       margin-bottom: rem(26);
+      display: block;
+      transition: all 0.3s;
+
+      &:hover {
+         color: #E52330;
+      }
 
       @media (max-width:$laptopLarge) {
          font-size: 60px;
